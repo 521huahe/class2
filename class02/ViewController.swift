@@ -10,8 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  
     
+    @IBOutlet weak var ibMesg: UILabel!
     var result :float_t = 10.2
+    
+   
+    @IBAction func huahe521(_ sender: UIButton) {print("我按了啥")
+        
+        ibMesg.text = "我要铜锣烧"
+        ibMesg.textColor=UIColor.red
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -47,6 +56,9 @@ class ViewController: UIViewController {
         return a + b
     }
 
+        
+        
+        
 }
-
+  
 }
