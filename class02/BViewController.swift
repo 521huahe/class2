@@ -12,7 +12,7 @@ class BViewController: UIViewController {
  
     
     
-    @IBOutlet weak var ibMesg: UILabel!
+    @IBOutlet weak var ibmMesg: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,8 +21,8 @@ class BViewController: UIViewController {
     
     @IBAction func huahe521(_ sender: UIButton) {print("我按了啥")
         
-        ibMesg.text = "我要牛奶糖"
-        ibMesg.textColor=UIColor.red
+        ibmMesg.text = "我要牛奶糖"
+        ibmMesg.textColor=UIColor.red
     }
 
     /*
