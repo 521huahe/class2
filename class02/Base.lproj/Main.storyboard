@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hke-Uj-8dP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KfJ-PH-Jal">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -84,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="16" y="269"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="iBt-y3-F3D">
             <objects>
-                <viewController id="Rt6-Bl-IMR" sceneMemberID="viewController">
+                <viewController id="Rt6-Bl-IMR" customClass="LoginViewController" customModule="class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5VS-5r-EoK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +97,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="Rt6-Bl-IMR" id="3Rg-z9-hBw"/>
+                                    <outlet property="delegate" destination="Rt6-Bl-IMR" id="Hyc-sd-mNs"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9rE-Pa-OB5">
@@ -143,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="-339.13043478260875" y="-909.375"/>
         </scene>
-        <!--View Controller-->
+        <!--MasterV Iew Controller-->
         <scene sceneID="bsT-eh-Glw">
             <objects>
-                <viewController id="86J-lb-Taw" sceneMemberID="viewController">
+                <viewController id="86J-lb-Taw" customClass="MasterVIewController" customModule="class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Usb-Hm-o6g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,20 +205,25 @@
             </objects>
             <point key="canvasLocation" x="1179.7101449275362" y="-911.38392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--My Map View Controller-->
         <scene sceneID="E6m-vw-OOo">
             <objects>
-                <viewController id="KfJ-PH-Jal" sceneMemberID="viewController">
+                <viewController id="KfJ-PH-Jal" customClass="MyMapViewController" customModule="class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1xK-7M-nNu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="apG-Uj-00h">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="apG-Uj-00h">
                                 <rect key="frame" x="0.0" y="44" width="414" height="835"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="apG-Uj-00h" secondAttribute="bottom" constant="17" id="E4t-PJ-uMs"/>
+                            <constraint firstItem="apG-Uj-00h" firstAttribute="top" secondItem="muA-d4-Hll" secondAttribute="top" id="guK-qg-0ja"/>
+                            <constraint firstItem="apG-Uj-00h" firstAttribute="leading" secondItem="muA-d4-Hll" secondAttribute="leading" id="u8V-92-X7A"/>
+                            <constraint firstItem="apG-Uj-00h" firstAttribute="trailing" secondItem="muA-d4-Hll" secondAttribute="trailing" id="ubB-RO-Mh4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="muA-d4-Hll"/>
                     </view>
                 </viewController>
@@ -227,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="2376.811594202899" y="-1330.5803571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--My Web View Controller-->
         <scene sceneID="stH-ai-lcJ">
             <objects>
-                <viewController id="NGs-zI-PXE" sceneMemberID="viewController">
+                <viewController id="NGs-zI-PXE" customClass="MyWebViewController" customModule="class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gum-Zj-SGu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
