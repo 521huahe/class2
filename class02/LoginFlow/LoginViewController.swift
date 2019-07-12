@@ -14,6 +14,11 @@ class LoginViewController: UIViewController ,UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
+        
+       
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("touchesBegan")
@@ -42,7 +47,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate {
         //条件成立
         let substringToReplace = 输入的文字[rangeOfTextToReplace]
         let count = 输入的文字.count - substringToReplace.count + string.count
-        print("tag:\(textField.tag)")
+         print("tag:\(textField.tag)")
        
         
         if textField.tag==1{

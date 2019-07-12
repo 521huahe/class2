@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KfJ-PH-Jal">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NGs-zI-PXE">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -91,7 +91,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9k0-Da-lEB">
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9k0-Da-lEB">
                                 <rect key="frame" x="20" y="105" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -100,7 +100,7 @@
                                     <outlet property="delegate" destination="Rt6-Bl-IMR" id="Hyc-sd-mNs"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9rE-Pa-OB5">
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="b" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9rE-Pa-OB5">
                                 <rect key="frame" x="20" y="165" width="374" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="ShO-Dm-ibP"/>
@@ -226,15 +226,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="muA-d4-Hll"/>
                     </view>
+                    <connections>
+                        <outlet property="myMapView" destination="apG-Uj-00h" id="6QN-1y-GBE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPS-PP-Vpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2376.811594202899" y="-1330.5803571428571"/>
         </scene>
-        <!--My Web View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="stH-ai-lcJ">
             <objects>
-                <viewController id="NGs-zI-PXE" customClass="MyWebViewController" customModule="class02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NGs-zI-PXE" customClass="WebViewController" customModule="class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gum-Zj-SGu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,6 +260,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bel-cS-0Ce"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="arH-1g-pnG" id="pbr-O0-LIB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xo-fY-T8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
